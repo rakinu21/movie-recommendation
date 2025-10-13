@@ -1,0 +1,48 @@
+
+:root {
+  /* 🎬 Brand Colors */
+  --color-background: #0d0d0f;       /* Dark cinematic background */
+  --color-primary: #e50914;          /* Netflix-style red for accents */
+  --color-secondary: #1f1f23;        /* Card background or contrast panels */
+  --color-highlight: #f5c518;        /* IMDb yellow for ratings or hover */
+  --color-favorite: #ff3b3b;         /* Favorite (heart) color */
+
+  /* 🧾 Text Colors */
+  --font-color-primary: #ffffff;     /* Main text color */
+  --font-color-secondary: #b3b3b3;   /* Subtext or muted info */
+  --font-color-highlight: #f5c518;   /* Highlight text or badges */
+
+  /* 🎞️ Font Families */
+  --font-family-main: 'Poppins', 'Roboto', sans-serif;
+  --font-family-accent: 'Playfair Display', serif;
+
+  /* 🪄 Movie Card Styles */
+  --movie-card-bg: var(--color-secondary);
+  --movie-card-hover-bg: #2a2a30;
+  --movie-card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --movie-card-radius: 16px;
+
+  /* ❤️ Favorite State */
+  --favorite-color: var(--color-favorite);
+  --favorite-hover: #ff6b6b;
+
+  /* 🌍 Layout */
+  --global-padding: 1rem;
+  --global-radius: 12px;
+}
+
+
+.app-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: auto;
+
+
+  .main-content{
+    width: 90%;
+    
+  }
+}

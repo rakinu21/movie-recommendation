@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import { MovieCards } from '../components/MovieCards'
-
+import '../css/home.css'
 
 export const Home = () => {
 
@@ -45,7 +45,7 @@ export const Home = () => {
         </form>
 
         <div className="grid">
-            {movies.map(movie =>(<MovieCards movie={movie} key={movie.id}/>) )};
+            {movies.map(movie =>(<MovieCards movie={movie} key={movie.id}/>) )}
         </div>
     </div>
   )

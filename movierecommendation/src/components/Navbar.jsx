@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Links } from 'react-router-dom'
+import'../css/Navbar.css'
 export const Navbar = () => {
   return (
     <div className='navbar'>

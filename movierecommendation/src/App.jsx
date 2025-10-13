@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='app-content'>
 
      <Navbar/>
      <main className='main-content'>

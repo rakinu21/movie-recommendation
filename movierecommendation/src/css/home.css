@@ -1,0 +1,87 @@
+:root {
+  /* 🎬 Brand Colors */
+  --color-background: #0d0d0f;       /* Dark cinematic background */
+  --color-primary: #e50914;          /* Netflix-style red for accents */
+  --color-secondary: #1f1f23;        /* Card background or contrast panels */
+  --color-highlight: #f5c518;        /* IMDb yellow for ratings or hover */
+  --color-favorite: #ff3b3b;         /* Favorite (heart) color */
+
+  /* 🧾 Text Colors */
+  --font-color-primary: #ffffff;     /* Main text color */
+  --font-color-secondary: #b3b3b3;   /* Subtext or muted info */
+  --font-color-highlight: #f5c518;   /* Highlight text or badges */
+
+  /* 🎞️ Font Families */
+  --font-family-main: 'Poppins', 'Roboto', sans-serif;
+  --font-family-accent: 'Playfair Display', serif;
+
+  /* 🪄 Movie Card Styles */
+  --movie-card-bg: var(--color-secondary);
+  --movie-card-hover-bg: #2a2a30;
+  --movie-card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --movie-card-radius: 16px;
+
+  /* ❤️ Favorite State */
+  --favorite-color: var(--color-favorite);
+  --favorite-hover: #ff6b6b;
+
+  /* 🌍 Layout */
+  --global-padding: 1rem;
+  --global-radius: 12px;
+
+    --btn-bg: var(--color-primary);
+  --btn-bg-hover: #ff1e1e;
+  --btn-text-color: #ffffff;
+  --btn-font-family: var(--font-family-main);
+}
+
+
+.home{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+
+    .search-form{
+        border: 2px solid blue;
+        display: flex;
+        gap: 1rem;
+        .search-input{
+            width: 400px;
+            height: 3rem;
+            padding: 0 1rem;
+            border-radius: var(--global-radius);
+            border: none;
+        }
+
+        .search-button{
+            padding: 0 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: var(--btn-bg);
+            border-radius: var(--global-radius);
+            border: none;
+            text-transform: capitalize;
+            transition: 0.5s ease;
+            color: var(--btn-text-color);
+
+            &:hover{
+                background-color: var(--btn-bg-hover);
+                transform:translateY(-5px);
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .grid{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: center;
+    }
+}
