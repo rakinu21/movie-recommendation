@@ -45,7 +45,8 @@ export const Home = () => {
         </form>
 
         <div className="grid">
-            {movies.map(movie =>(<MovieCards movie={movie} key={movie.id}/>) )}
+            {movies.map((movie) => movie.title.toLowerCase().startsWith(searchQuery) && 
+            (<MovieCards movie={movie} key={movie.id}/>) )}
         </div>
     </div>
   )
