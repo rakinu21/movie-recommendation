@@ -55,10 +55,14 @@ export const Home = () => {
             <button type='submit' className='search-button'>search</button>
         </form>
 
-        <div className="grid">
+        {loading ? (<div className='loading'>loading...</div> ) :
+          ( <div className="grid">
             {movies.map((movie) => movie.title.toLowerCase().startsWith(searchQuery) && 
             (<MovieCards movie={movie} key={movie.id}/>) )}
-        </div>
+        </div>)
+        }
+
+        
     </div>
   )
 }
