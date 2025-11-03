@@ -30,3 +30,9 @@
   --global-padding: 1rem;
   --global-radius: 12px;
 }
+
+.grid-fav{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

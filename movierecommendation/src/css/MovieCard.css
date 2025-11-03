@@ -58,7 +58,12 @@
           color: var(--favorite-hover);
           transform: scale(1.1);
         }
+
+        .active{
+        color: red;
       }
+      }
+      
     }
 
     &:hover .movie-overlay {
